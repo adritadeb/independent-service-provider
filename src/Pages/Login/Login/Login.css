@@ -1,0 +1,15 @@
+.form-title {
+    color: plum;
+}
+
+.submit-btn {
+    background-color: plum;
+    color: white;
+    border: none;
+    margin: 20px 0 20px 170px;
+}
+
+.submit-btn:hover {
+    background-color: rgba(238, 130, 238, 0.712);
+    color: white;
+}
