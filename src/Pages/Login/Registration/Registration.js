@@ -16,12 +16,12 @@ const Registration = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
     let errorElement;
 
     const handleCreateUser = event => {
         event.preventDefault();
-        const name = nameRef.current.value;
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
@@ -33,7 +33,7 @@ const Registration = () => {
     }
 
     if (error) {
-        errorElement = <p className='text-danger'>Error: {error.message}</p>
+        errorElement = <p className='text-danger'>Error: {error?.message}</p>
     }
 
     if (user) {
