@@ -12,7 +12,6 @@ import './Login.css';
 const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
-    const navigate = useNavigate();
     const [
         signInWithEmailAndPassword,
         user,
@@ -20,6 +19,7 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+    const navigate = useNavigate();
     const location = useLocation();
     const from = location?.state?.from?.pathname || '/';
     let errorElement;
@@ -32,6 +32,14 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
 
+    if (loading || sending) {
+        return <Loading></Loading>
+    }
+
+    if (error) {
+        errorElement = <p className='text-danger'>Error: {error?.message}</p>
+    }
+
     const resetPassword = async () => {
         const email = emailRef.current.value;
         if (email) {
@@ -39,16 +47,8 @@ const Login = () => {
             toast('Sent email');
         }
         else {
-            toast('Please enter your email address');
+            toast('Please enter your email address')
         }
-    }
-
-    if (loading || sending) {
-        return <Loading></Loading>
-    }
-
-    if (error) {
-        errorElement = <p className='text-danger'>Error: {error?.message}</p>
     }
 
     if (user) {
