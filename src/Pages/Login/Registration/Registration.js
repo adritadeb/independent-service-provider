@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../../Shared/Loading/Loading';
 
 const Registration = () => {
     const nameRef = useRef('');
@@ -25,6 +26,10 @@ const Registration = () => {
         const password = passwordRef.current.value;
 
         createUserWithEmailAndPassword(email, password);
+    }
+
+    if (loading) {
+        return <Loading></Loading>
     }
 
     if (error) {
