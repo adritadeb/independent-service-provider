@@ -1,0 +1,14 @@
+.card-img {
+    height: 260px;
+}
+
+.checkout-btn {
+    background-color: violet;
+    color: white;
+    border: none;
+}
+
+.checkout-btn:hover {
+    background-color: rgba(238, 130, 238, 0.712);
+    color: white;
+}
