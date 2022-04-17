@@ -6,7 +6,7 @@ import './Header.css';
 const Header = () => {
     return (
         <div>
-            <Navbar className='header-nav' collapseOnSelect expand="lg">
+            <Navbar className='header-nav p-3' fixed='top' collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand as={Link} to="/">Wedding-Portrait</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
