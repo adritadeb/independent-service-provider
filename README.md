@@ -1,9 +1,10 @@
 # Project Name
 
-## -> Wedding-Portrait
+## --> Wedding-Portrait
 
 # Live-site link
 
+## --> [Project live-site link](https://independent-service-prov-35fa1.web.app/)
 
 # About my project
 * On the home page, there are three main sections. They are banner, services, and an extra section.
