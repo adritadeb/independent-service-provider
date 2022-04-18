@@ -11,3 +11,6 @@
 * On the blogs page of this project, there are three questions answered.
 * On the about me page, there are writings about my goal and how will I do hard work to achieve my goal.
 * On the login and registration page, there is an authentication system by firebase on email-password and google. There is also an applied email verification system on the registration page, and a password reset system on the login page.
+
+# Technologies used in this project
+Firebase, react-firebase-hooks, react-router, react-toast, bootstrap, react-bootstrap
