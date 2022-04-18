@@ -2,29 +2,29 @@
     {
         "img": "https://i.ibb.co/CbCpwHw/service1.jpg",
         "id": 1,
-        "price": 100,
-        "body": 204,
-        "name": "Matthews Jimenez"
+        "price": 370,
+        "body": "2 hour shoot, 30 digital image and only ceremony coverage.",
+        "name": "Regular Package"
     },
     {
-        "img": "https://i.ibb.co/CbCpwHw/service1.jpg",
+        "img": "https://i.ibb.co/7b4SfLG/service2.png",
         "id": 2,
-        "price": 100,
-        "body": 42,
-        "name": "Deann Chambers"
+        "price": 460,
+        "body": "3 hour shoot, pre-wedding coverage and 50 digital image.",
+        "name": "Premium Package"
     },
     {
-        "img": "https://i.ibb.co/CbCpwHw/service1.jpg",
+        "img": "https://i.ibb.co/wNcrs3w/service3.jpg",
         "id": 3,
-        "price": 100,
-        "body": 42,
-        "name": "Deann Chambers"
+        "price": 650,
+        "body": "5 hour shoot, portrait light setup and unlimited photo taken.",
+        "name": "Ultra Package"
     },
     {
-        "img": "https://i.ibb.co/CbCpwHw/service1.jpg",
+        "img": "https://i.ibb.co/GTX4cnW/service4.jpg",
         "id": 4,
-        "price": 100,
-        "body": 42,
-        "name": "Deann Chambers"
+        "price": 800,
+        "body": "Whole event coverage, all from Ultra Package, 40 special edited photo and full HD video quality.",
+        "name": "Special Package"
     }
 ]

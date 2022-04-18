@@ -13,7 +13,7 @@ const Service = ({ service }) => {
         <div>
             <Card style={{ width: '18rem' }} className='border-2'>
                 <Card.Img variant="top" className='card-img' src={img} />
-                <Card.Body>
+                <Card.Body className='bg-secondary text-white'>
                     <Card.Title className='fs-3'>{name}</Card.Title>
                     <Card.Text>{body}</Card.Text>
                     <Card.Subtitle className="mb-2 fs-4">Price: ${price}</Card.Subtitle>
